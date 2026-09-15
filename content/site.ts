@@ -163,3 +163,15 @@ export const founder = {
     "For production, replace this paraphrased placeholder with the client-approved founder biography and original photography."
   ]
 };
+
+export const legalPage = {
+  intro:
+    "© 2026 SAGE Advisory Group, a division of Ballzy Enterprises LLC. All rights reserved. SAGE provides advisory and operational support services for hospitality and restaurant businesses. Information shared through this website is for general guidance only and should not be considered legal, financial, or tax advice.",
+  financialDisclaimer: {
+    title: "Financial Administration Disclaimer",
+    body:
+      "© 2025 SAGE Advisory Group, a division of Ballzy Enterprises LLC. All rights reserved, provides financial administration and reporting support for restaurant and hospitality businesses. We are not a CPA firm and do not offer tax preparation, audit, or attestation services. All reports and analyses are prepared for internal management purposes only. Clients remain responsible for the accuracy of their financial data and for consulting licensed professionals regarding accounting, tax, or compliance matters. SAGE assumes no liability for actions or decisions made based on the information provided."
+  },
+  closing:
+    "At SAGE, we have long-standing relationships with legal professionals who understand the needs of owners and operators in the restaurant industry. Whether it’s entity setup, contract review, lease guidance, or navigating ongoing obligations, these relationships give owners and operators access to clear, reliable legal support. This helps reduce risk, strengthen decision-making, and protect the long-term stability of the business."
+};
