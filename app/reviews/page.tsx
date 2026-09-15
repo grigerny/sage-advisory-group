@@ -13,16 +13,20 @@ export default function ReviewsPage() {
       <PageHero
         eyebrow="Client Reviews"
         title="What Our Clients Say"
-        body="Use only approved testimonials and attribution in the production version."
+        body="Client stories will appear here once approved testimonials are ready."
       />
       <section className="section">
         <div className="container review-grid">
-          {reviews.map((review, index) => (
-            <blockquote className="review-card" key={index}>
-              <p>“{review.quote}”</p>
-              <footer>{review.name}</footer>
-            </blockquote>
-          ))}
+          {reviews.length === 0 ? (
+            <p className="lead">Reviews are coming soon.</p>
+          ) : (
+            reviews.map((review, index) => (
+              <blockquote className="review-card" key={index}>
+                <p>“{review.quote}”</p>
+                <footer>{review.name}</footer>
+              </blockquote>
+            ))
+          )}
         </div>
       </section>
       <CTA />

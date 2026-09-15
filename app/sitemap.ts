@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { blogPosts } from "@/content/blogs";
-import { solutions } from "@/content/site";
+import { reviews, solutions } from "@/content/site";
 
 export const dynamic = "force-static";
 
@@ -10,14 +10,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/about-us",
     "/solutions",
-    "/reviews",
     "/blogs",
     "/permits",
     "/capital",
     "/crm",
     "/legal",
     "/terms-of-service",
-    "/privacy-policy"
+    "/privacy-policy",
+    ...(reviews.length > 0 ? ["/reviews"] : [])
   ];
 
   return [

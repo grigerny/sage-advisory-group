@@ -14,7 +14,6 @@ export const site = {
     { label: "Home", href: "/" },
     { label: "About", href: "/about-us/" },
     { label: "Solutions", href: "/solutions/" },
-    { label: "Reviews", href: "/reviews/" },
     { label: "Blogs", href: "/blogs/" }
   ]
 };
@@ -147,18 +146,8 @@ export const resources = [
   }
 ];
 
-export const reviews = [
-  {
-    quote:
-      "Replace this placeholder with an approved client testimonial from the original source material.",
-    name: "Client testimonial"
-  },
-  {
-    quote:
-      "Keep testimonials in this content file so future updates never require changing layout code.",
-    name: "Client testimonial"
-  }
-];
+export const reviews: { quote: string; name: string }[] = [];
+// When ready, add approved testimonials here and restore Reviews in site.nav.
 
 export const founder = {
   name: "Michael Balsamo",

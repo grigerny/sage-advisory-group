@@ -10,8 +10,8 @@ export function Header() {
             className="brand-logo"
             src={images.logo}
             alt="SAGE Advisory Group"
-            width={220}
-            height={119}
+            width={280}
+            height={151}
           />
         </Link>
 

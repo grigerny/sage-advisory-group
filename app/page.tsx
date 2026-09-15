@@ -97,20 +97,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section section-dark">
-        <div className="container">
-          <SectionHeading
-            eyebrow="Testimonials"
-            title="Real Stories from the Field"
-            body="Hospitality is built on partnership. Use this section for approved client feedback and proof."
-          />
-          <div className="quote-card">
-            <p>“Approved testimonial content can live here.”</p>
-            <strong>SAGE Client</strong>
-          </div>
-        </div>
-      </section>
-
       <section className="section">
         <div className="container">
           <SectionHeading

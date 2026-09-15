@@ -58,7 +58,7 @@ main { min-height: 70vh; }
 .brand { display: inline-flex; align-items: center; gap: 10px; margin-right: auto; }
 .brand-logo {
   width: auto;
-  height: 52px;
+  height: 72px;
   object-fit: contain;
 }
 .desktop-nav { display: flex; gap: 28px; }
@@ -301,7 +301,7 @@ main { min-height: 70vh; }
   .container { width: min(calc(100% - 28px), var(--max)); }
   .section { padding: 75px 0; }
   .header-inner { min-height: 72px; gap: 12px; }
-  .brand-logo { height: 40px; }
+  .brand-logo { height: 56px; }
   .home-hero { min-height: 640px; }
   .hero-content { padding-block: 75px; }
   .hero-brand-mark { display: none; }
