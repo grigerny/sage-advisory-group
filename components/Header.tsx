@@ -16,25 +16,16 @@ export function Header() {
         </Link>
 
         <nav className="desktop-nav" aria-label="Primary navigation">
-          {site.nav.map((item) =>
-            item.external ? (
-              <a key={item.href} href={item.href} target="_blank" rel="noreferrer">
-                {item.label}
-              </a>
-            ) : (
-              <Link key={item.href} href={item.href}>{item.label}</Link>
-            )
-          )}
+          {site.nav.map((item) => (
+            <Link key={item.href} href={item.href}>
+              {item.label}
+            </Link>
+          ))}
         </nav>
 
-        <a
-          className="button button-small"
-          href={site.contactUrl}
-          target="_blank"
-          rel="noreferrer"
-        >
+        <Link className="button button-small" href={site.contactUrl}>
           Get Started
-        </a>
+        </Link>
       </div>
     </header>
   );

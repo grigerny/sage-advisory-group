@@ -1,5 +1,9 @@
-export const contactUrl =
+/** Legacy HoneyBook portal — kept for reference; primary contact is now /contact/ */
+export const honeyBookUrl =
   "https://thesageadvisorygroup.hbportal.co/public/68d2b7d43948bd0037790b2e";
+
+/** Internal contact route used by nav and CTAs */
+export const contactUrl = "/contact/";
 
 export const site = {
   name: "The SAGE Advisory Group",
@@ -8,6 +12,7 @@ export const site = {
     "Restaurant and hospitality advisory for independent operators seeking stronger financial visibility, systems, and day-to-day execution.",
   email: "info@thesageadvisorygroup.com",
   contactUrl,
+  honeyBookUrl,
   socials: {
     facebook: "https://www.facebook.com/people/The-SAGE-Advisory-Group/61582707025681/",
     instagram: "https://www.instagram.com/thesageadvisorygroup/",
@@ -18,7 +23,66 @@ export const site = {
     { label: "About", href: "/about-us/" },
     { label: "Solutions", href: "/solutions/" },
     { label: "Blogs", href: "/blogs/" },
-    { label: "Contact", href: contactUrl, external: true as const }
+    { label: "Contact", href: contactUrl }
+  ]
+};
+
+/** Lead form mirrored from the former HoneyBook intake questionnaire */
+export const contact = {
+  eyebrow: "Nice to meet you",
+  title: "Start a Conversation",
+  body:
+    "Tell us about your restaurant operation so we can understand how best to support your top priorities.",
+  address: {
+    line1: "440 Kent Ave, Suite 12F",
+    line2: "Brooklyn, NY 11249"
+  },
+  formEmail: "michael@thesageadvisorygroup.com",
+  quote: {
+    text: "Coming together is a beginning, staying together is progress, and working together is success.",
+    attribution: "Henry Ford"
+  },
+  submitLabel: "Click to Submit",
+  successTitle: "Thank you — we received your note.",
+  successBody:
+    "Michael or a member of the SAGE team will follow up shortly.",
+  roleOptions: [
+    "Owner/ Partner",
+    "General Manager",
+    "Director of Operations",
+    "Human Resources",
+    "Administrative",
+    "Other"
+  ],
+  decisionOptions: [
+    "Yes, I lead these decisions",
+    "Yes, there's a shared responsibility"
+  ],
+  supportOptions: [
+    "Restaurant Financial Management",
+    "Restaurant Day to Day Operational Advisory",
+    "One to One Coaching for Owners/ Operators",
+    "I / We currently manage everything in-house"
+  ],
+  locationOptions: [
+    "1 - 2",
+    "2 - 4",
+    "4 or more",
+    "First location is underway",
+    "Other"
+  ],
+  stageOptions: [
+    "Just Getting off the Ground",
+    "Steady and Growing",
+    "Scaling and Expanding",
+    "Ready for Added Structure and Systems",
+    "Not Open and Seeking Pre-Opening Support & Guidance"
+  ],
+  timelineOptions: [
+    "As soon as possible",
+    "30 - 90 days",
+    "3 - 6 months",
+    "Interested in learning more"
   ]
 };
 

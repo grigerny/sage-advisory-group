@@ -11,7 +11,7 @@ A static-first Next.js 16 starter modeled around the current public SAGE Advisor
 - Designed for GitHub + Cloudflare Pages
 - Client-editable business content lives in `/content`
 - Existing public URL patterns are preserved where practical for SEO
-- HoneyBook remains the external lead/contact flow
+- Internal `/contact/` page hosts the lead intake form (formerly HoneyBook)
 
 ## Local development
 
@@ -72,6 +72,7 @@ The AI should edit `/content/site.ts`, create a branch/PR, and let the client ap
 - `/reviews/`
 - `/blogs/`
 - `/blogs/detail/[slug]/`
+- `/contact/`
 - `/permits/`
 - `/capital/`
 - `/crm/`

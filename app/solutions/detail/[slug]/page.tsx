@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { CTA } from "@/components/CTA";
 import { PageHero } from "@/components/PageHero";
 import { solutions } from "@/content/site";
@@ -21,6 +22,17 @@ export default async function SolutionDetail({
 
   return (
     <>
+      <div className="breadcrumb-bar">
+        <div className="container">
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Solutions", href: "/solutions/" },
+              { label: solution.pageTitle }
+            ]}
+          />
+        </div>
+      </div>
       <PageHero eyebrow="SAGE Solution" title={solution.pageTitle} />
       <section className="section">
         <div className="container split-grid detail-grid">

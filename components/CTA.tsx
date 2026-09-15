@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { site } from "@/content/site";
 
 export function CTA() {
@@ -8,9 +9,9 @@ export function CTA() {
           <p className="eyebrow light">Ready to get started?</p>
           <h2>Build more clarity into the way your restaurant runs.</h2>
         </div>
-        <a className="button button-light" href={site.contactUrl} target="_blank" rel="noreferrer">
+        <Link className="button button-light" href={site.contactUrl}>
           Schedule an Advisory Call
-        </a>
+        </Link>
       </div>
     </section>
   );

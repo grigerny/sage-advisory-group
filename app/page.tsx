@@ -18,9 +18,9 @@ export default function HomePage() {
           <h1>{home.hero.title}</h1>
           <p>{home.hero.body}</p>
           <div className="hero-actions">
-            <a className="button" href={site.contactUrl} target="_blank" rel="noreferrer">
+            <Link className="button" href={site.contactUrl}>
               {home.hero.primaryCta}
-            </a>
+            </Link>
             <Link className="button button-outline" href="/solutions/">
               {home.hero.secondaryCta}
             </Link>
@@ -61,12 +61,12 @@ export default function HomePage() {
           <h2>{home.investment.title}</h2>
           <p>{home.investment.body}</p>
           <div className="hero-actions">
-            <a className="button button-light" href={site.contactUrl} target="_blank" rel="noreferrer">
+            <Link className="button button-light" href={site.contactUrl}>
               Contact Us
-            </a>
-            <a className="button button-outline-light" href={site.contactUrl} target="_blank" rel="noreferrer">
+            </Link>
+            <Link className="button button-outline-light" href={site.contactUrl}>
               Schedule a Free Advisory Call
-            </a>
+            </Link>
           </div>
         </div>
       </section>

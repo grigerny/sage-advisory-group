@@ -81,15 +81,9 @@ export function Footer() {
 
         <div>
           <h3>Quick Links</h3>
-          {site.nav.map((item) =>
-            item.external ? (
-              <a key={item.href} href={item.href} target="_blank" rel="noreferrer">
-                {item.label}
-              </a>
-            ) : (
-              <Link key={item.href} href={item.href}>{item.label}</Link>
-            )
-          )}
+          {site.nav.map((item) => (
+            <Link key={item.href} href={item.href}>{item.label}</Link>
+          ))}
           <Link href="/legal/">Legal</Link>
           <Link href="/terms-of-service/">Terms & Conditions</Link>
           <Link href="/privacy-policy/">Privacy Policy</Link>

@@ -1,4 +1,5 @@
 import { CTA } from "@/components/CTA";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
 import { SolutionGrid } from "@/components/SolutionGrid";
@@ -13,6 +14,16 @@ export const metadata = {
 export default function SolutionsPage() {
   return (
     <>
+      <div className="breadcrumb-bar">
+        <div className="container">
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Solutions" }
+            ]}
+          />
+        </div>
+      </div>
       <PageHero
         eyebrow="Solutions"
         title="How We Deliver Results"
