@@ -18,14 +18,22 @@ export default async function BlogDetail({
 
   return (
     <>
-      <PageHero eyebrow={post.date} title={post.title} />
+      <PageHero
+        eyebrow="Pre-Shift Notes and Industry Trends"
+        title={post.title}
+        body={post.author}
+      />
       <article className="section article">
         <div className="container article-body">
-          <p className="lead">{post.excerpt}</p>
+          <div className="article-image">
+            <img src={post.image} alt={post.title} />
+          </div>
           {post.body.map((section, index) => (
             <section key={index}>
               {section.heading && <h2>{section.heading}</h2>}
-              {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+              {section.paragraphs.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
             </section>
           ))}
         </div>
