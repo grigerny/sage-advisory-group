@@ -3,13 +3,24 @@ import { CTA } from "@/components/CTA";
 import { SectionHeading } from "@/components/SectionHeading";
 import { SolutionGrid } from "@/components/SolutionGrid";
 import { blogPosts } from "@/content/blogs";
-import { home, site } from "@/content/site";
+import { home, images, site } from "@/content/site";
 
 export default function HomePage() {
   return (
     <>
-      <section className="home-hero">
+      <section
+        className="home-hero"
+        style={{ backgroundImage: `url(${images.heroHome})` }}
+      >
         <div className="hero-overlay" />
+        <img
+          className="hero-brand-mark"
+          src={images.heroLogo}
+          alt=""
+          aria-hidden="true"
+          width={163}
+          height={63}
+        />
         <div className="container hero-content">
           <p className="eyebrow light">{home.hero.eyebrow}</p>
           <h1>{home.hero.title}</h1>
@@ -25,8 +36,8 @@ export default function HomePage() {
 
       <section className="section split-section">
         <div className="container split-grid">
-          <div className="photo-frame chef-placeholder" aria-label="Approved restaurant photo placeholder">
-            <span>RESTAURANT IMAGE</span>
+          <div className="photo-frame">
+            <img src={images.aboutKitchen} alt="Restaurant team in the kitchen" />
           </div>
           <div>
             <SectionHeading
@@ -46,7 +57,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="investment-band">
+      <section
+        className="investment-band"
+        style={{ backgroundImage: `url(${images.partnerBg})` }}
+      >
+        <div className="investment-overlay" />
         <div className="container investment-content">
           <p className="eyebrow light">{home.investment.eyebrow}</p>
           <h2>{home.investment.title}</h2>
@@ -67,8 +82,12 @@ export default function HomePage() {
             <Link className="text-link" href="/about-us/">Learn More <span>→</span></Link>
           </div>
           <div className="why-visual">
-            <div className="photo-frame plates-placeholder"><span>HOSPITALITY IMAGE</span></div>
-            <div className="photo-frame pos-placeholder"><span>OPERATIONS IMAGE</span></div>
+            <div className="photo-frame plates-placeholder">
+              <img src={images.whyFood} alt="Plated hospitality dishes" />
+            </div>
+            <div className="photo-frame pos-placeholder">
+              <img src={images.whyPos} alt="Restaurant point of sale system" />
+            </div>
           </div>
         </div>
         <div className="container stats-grid">
@@ -102,7 +121,9 @@ export default function HomePage() {
           <div className="blog-grid">
             {blogPosts.map((post) => (
               <article className="blog-card" key={post.slug}>
-                <div className="blog-image-placeholder" />
+                <div className="blog-image">
+                  <img src={post.image} alt={post.title} />
+                </div>
                 <p className="eyebrow">{post.date}</p>
                 <h3>{post.title}</h3>
                 <p>{post.excerpt}</p>

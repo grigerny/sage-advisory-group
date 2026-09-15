@@ -11,6 +11,10 @@ export const metadata: Metadata = {
     template: "%s | SAGE Advisory Group"
   },
   description: site.description,
+  icons: {
+    icon: "/favicon.png",
+    apple: "/favicon.png"
+  },
   openGraph: {
     type: "website",
     siteName: site.name,

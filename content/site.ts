@@ -19,6 +19,23 @@ export const site = {
   ]
 };
 
+/** Local copies of production assets from thesageadvisorygroup.com */
+export const images = {
+  logo: "/images/logo.png",
+  footerLogo: "/images/footer-logo.png",
+  favicon: "/favicon.png",
+  heroHome: "/images/hero-home.jpg",
+  heroLogo: "/images/hero-logo.png",
+  aboutKitchen: "/images/about-kitchen.jpg",
+  aboutApproach: "/images/about-approach.jpg",
+  whyFood: "/images/why-food.png",
+  whyPos: "/images/why-pos.png",
+  partnerBg: "/images/partner-bg.jpg",
+  innerBanner: "/images/inner-banner.jpg",
+  mission: "/images/mission.jpg",
+  founder: "/images/founder-michael-balsamo.jpg"
+};
+
 export const home = {
   hero: {
     eyebrow: "Restaurant & Hospitality Advisory",
@@ -61,6 +78,7 @@ export const solutions = [
     slug: "Financial-Management",
     title: "Financial Management",
     pageTitle: "Restaurant Financial Management",
+    image: "/images/service-financial.jpg",
     summary:
       "Daily tracking and reporting systems designed to give owners clearer visibility into sales, food cost, prime cost, purchasing, and margin.",
     details:
@@ -71,6 +89,7 @@ export const solutions = [
     slug: "Operations-and-Field-Advisory",
     title: "Operations and Field Advisory",
     pageTitle: "Operations and Field Advisory",
+    image: "/images/service-operations.jpg",
     summary:
       "On-site support for SOPs, accountability routines, service standards, workflows, and consistent execution across BOH and FOH.",
     details:
@@ -81,6 +100,7 @@ export const solutions = [
     slug: "Restaurant-Project-Management",
     title: "Restaurant Project Management",
     pageTitle: "Restaurant Project Management",
+    image: "/images/service-project-management.jpg",
     summary:
       "Project oversight for restaurant openings, coordinating timelines, specialists, operating readiness, and the details that have to come together before launch.",
     details:
@@ -91,6 +111,7 @@ export const solutions = [
     slug: "11-Coaching-for-Restaurant-Owners-Operators",
     title: "1:1 Coaching for Restaurant Owners & Operators",
     pageTitle: "1:1 Coaching for Restaurant Owners & Operators",
+    image: "/images/service-coaching.jpg",
     summary:
       "Individual advisory for owners and operators who want an experienced thinking partner, clearer priorities, and consistent accountability.",
     details:

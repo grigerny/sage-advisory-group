@@ -1,18 +1,23 @@
-# Approved site assets go here
+# Site assets
 
-Suggested production filenames:
+Local copies pulled from https://www.thesageadvisorygroup.com for this rebuild.
 
-- logo.svg
-- hero-home.webp
-- about-kitchen.webp
-- why-food.webp
-- why-pos.webp
-- founder-michael-balsamo.webp
-- mission.webp
-- service-financial.webp
-- service-operations.webp
-- service-project-management.webp
-- service-coaching.webp
+## Brand
+- `logo.png` — header wordmark
+- `hero-logo.png` — light logo overlay for hero
+- `footer-logo.png` — circular wave mark
+- `/public/favicon.png` — favicon / app icon
 
-This starter uses CSS placeholders so the repository can be shared safely before the client's
-original image files are provided or approved for reuse.
+## Photography
+- `hero-home.jpg` — homepage hero
+- `about-kitchen.jpg` — homepage about section
+- `about-approach.jpg` — about page supporting image
+- `why-food.png` / `why-pos.png` — Why SAGE visuals
+- `partner-bg.jpg` — investment / partner band background
+- `inner-banner.jpg` — interior page heroes
+- `mission.jpg` — mission section
+- `founder-michael-balsamo.jpg` — founder portrait
+- `service-*.jpg` — solution cards and detail pages
+- `blog-*.jpg` — blog card images
+
+Image paths are referenced from `/content/site.ts` and `/content/blogs.ts`.

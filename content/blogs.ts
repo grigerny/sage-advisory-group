@@ -3,6 +3,7 @@ export type BlogPost = {
   title: string;
   date: string;
   excerpt: string;
+  image: string;
   body: { heading?: string; paragraphs: string[] }[];
 };
 
@@ -11,6 +12,7 @@ export const blogPosts: BlogPost[] = [
     slug: "Clear-Communication-Turns-Good-Service-into-Great-Hospitality",
     title: "Clear Communication Turns Good Service into Great Hospitality",
     date: "2026",
+    image: "/images/blog-communication.jpg",
     excerpt:
       "A field-focused look at how disciplined communication supports smoother service, stronger teams, and a better guest experience.",
     body: [
@@ -26,6 +28,7 @@ export const blogPosts: BlogPost[] = [
     slug: "The-New-Reality-A-Shift-to-Smarter-Back-Office-Management-for-Restaurants",
     title: "The New Reality: A Shift to Smarter Back-Office Management for Restaurants",
     date: "2025",
+    image: "/images/blog-back-office.jpg",
     excerpt:
       "Why restaurant operators are treating back-office structure, reporting, and accountability as operating strategy rather than administrative overhead.",
     body: [
@@ -41,6 +44,7 @@ export const blogPosts: BlogPost[] = [
     slug: "Building-and-Keeping-a-Strong-Team-in-2025",
     title: "Building and Keeping a Strong Team in 2025",
     date: "November 2025",
+    image: "/images/blog-team.jpg",
     excerpt:
       "A perspective on restaurant staffing, leadership, retention, structure, and the systems that help teams stay effective.",
     body: [

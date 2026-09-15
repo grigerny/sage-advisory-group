@@ -22,7 +22,9 @@ export default async function SolutionDetail({
       <PageHero eyebrow="SAGE Solution" title={solution.pageTitle} />
       <section className="section">
         <div className="container split-grid detail-grid">
-          <div className="photo-frame service-placeholder"><span>SERVICE IMAGE</span></div>
+          <div className="photo-frame service-placeholder">
+            <img src={solution.image} alt={solution.title} />
+          </div>
           <div>
             <p className="eyebrow">{solution.title}</p>
             <h2>{solution.pageTitle}</h2>

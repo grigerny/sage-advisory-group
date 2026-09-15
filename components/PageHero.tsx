@@ -1,3 +1,5 @@
+import { images } from "@/content/site";
+
 type PageHeroProps = {
   eyebrow?: string;
   title: string;
@@ -6,7 +8,10 @@ type PageHeroProps = {
 
 export function PageHero({ eyebrow, title, body }: PageHeroProps) {
   return (
-    <section className="page-hero">
+    <section
+      className="page-hero"
+      style={{ backgroundImage: `url(${images.innerBanner})` }}
+    >
       <div className="page-hero-overlay" />
       <div className="container page-hero-content">
         {eyebrow && <p className="eyebrow light">{eyebrow}</p>}

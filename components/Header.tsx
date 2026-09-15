@@ -1,16 +1,18 @@
 import Link from "next/link";
-import { site } from "@/content/site";
+import { images, site } from "@/content/site";
 
 export function Header() {
   return (
     <header className="site-header">
       <div className="container header-inner">
         <Link className="brand" href="/" aria-label="SAGE home">
-          <span className="brand-mark" aria-hidden="true">S</span>
-          <span className="brand-copy">
-            <strong>SAGE</strong>
-            <small>ADVISORY GROUP</small>
-          </span>
+          <img
+            className="brand-logo"
+            src={images.logo}
+            alt="SAGE Advisory Group"
+            width={220}
+            height={119}
+          />
         </Link>
 
         <nav className="desktop-nav" aria-label="Primary navigation">

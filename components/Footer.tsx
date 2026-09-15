@@ -1,12 +1,18 @@
 import Link from "next/link";
-import { resources, site, solutions } from "@/content/site";
+import { images, resources, site, solutions } from "@/content/site";
 
 export function Footer() {
   return (
     <footer className="site-footer">
       <div className="container footer-grid">
         <div className="footer-brand">
-          <div className="footer-wave" aria-hidden="true">S</div>
+          <img
+            className="footer-logo"
+            src={images.footerLogo}
+            alt="SAGE Advisory Group"
+            width={75}
+            height={75}
+          />
           <p>
             Restaurant and hospitality advisory built around clarity, structure,
             execution, and measurable progress.

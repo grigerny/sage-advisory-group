@@ -19,7 +19,9 @@ export default function BlogsPage() {
         <div className="container blog-grid">
           {blogPosts.map((post) => (
             <article className="blog-card" key={post.slug}>
-              <div className="blog-image-placeholder" />
+              <div className="blog-image">
+                <img src={post.image} alt={post.title} />
+              </div>
               <p className="eyebrow">{post.date}</p>
               <h2>{post.title}</h2>
               <p>{post.excerpt}</p>

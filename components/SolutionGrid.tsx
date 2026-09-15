@@ -4,10 +4,10 @@ import { solutions } from "@/content/site";
 export function SolutionGrid() {
   return (
     <div className="solution-grid">
-      {solutions.map((solution, index) => (
+      {solutions.map((solution) => (
         <article className="solution-card" key={solution.slug}>
-          <div className={`solution-visual visual-${index + 1}`}>
-            <span>0{index + 1}</span>
+          <div className="solution-visual">
+            <img src={solution.image} alt={solution.title} />
           </div>
           <div className="solution-card-body">
             <h3>{solution.title}</h3>

@@ -1,7 +1,7 @@
 import { CTA } from "@/components/CTA";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
-import { founder, home } from "@/content/site";
+import { founder, home, images } from "@/content/site";
 
 export const metadata = {
   title: "About SAGE Advisory Group",
@@ -50,13 +50,20 @@ export default function AboutPage() {
               Replace this section with the client-approved mission statement from the source material.
             </p>
           </div>
-          <div className="photo-frame mission-placeholder"><span>MISSION IMAGE</span></div>
+          <div className="photo-frame mission-placeholder">
+            <img src={images.mission} alt="SAGE mission hospitality setting" />
+          </div>
         </div>
       </section>
 
       <section className="section founder-section">
         <div className="container split-grid">
-          <div className="photo-frame founder-placeholder"><span>FOUNDER PHOTO</span></div>
+          <div className="photo-frame founder-placeholder">
+            <img
+              src={images.founder}
+              alt={`${founder.name}, ${founder.role}`}
+            />
+          </div>
           <div>
             <p className="eyebrow">Meet the Founder</p>
             <h2>{founder.name}</h2>
