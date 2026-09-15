@@ -9,9 +9,9 @@ export const site = {
   email: "info@thesageadvisorygroup.com",
   contactUrl,
   socials: {
-    facebook: "#",
-    instagram: "#",
-    linkedin: "#"
+    facebook: "https://www.facebook.com/people/The-SAGE-Advisory-Group/61582707025681/",
+    instagram: "https://www.instagram.com/thesageadvisorygroup/",
+    linkedin: "https://www.linkedin.com/in/michael-balsamo-baa04b4/"
   },
   nav: [
     { label: "Home", href: "/" },
