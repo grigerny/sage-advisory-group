@@ -2,9 +2,9 @@ export type BlogPost = {
   slug: string;
   title: string;
   date: string;
+  author: string;
   excerpt: string;
   image: string;
-  author?: string;
   body: { heading?: string; paragraphs: string[] }[];
 };
 
@@ -13,6 +13,7 @@ export const blogPosts: BlogPost[] = [
     slug: "Clear-Communication-Turns-Good-Service-into-Great-Hospitality",
     title: "Clear Communication Turns Good Service into Great Hospitality",
     date: "2026",
+    author: "Michael Balsamo",
     image: "/images/blog-communication.jpg",
     excerpt:
       "Back in the day, and not that long ago, when I was a General Manager for a high volume restaurant group, I learned fast that restaurants rarely fall apart because of one big mistake — they fall apart because of a hundred small ones that go unspoken.",
@@ -76,6 +77,7 @@ export const blogPosts: BlogPost[] = [
     slug: "The-New-Reality-A-Shift-to-Smarter-Back-Office-Management-for-Restaurants",
     title: "The New Reality: A Shift to Smarter Back-Office Management for Restaurants",
     date: "2025",
+    author: "Michael Balsamo",
     image: "/images/blog-back-office.jpg",
     excerpt:
       "Independent restaurant operators are entering 2025 with a sharper understanding of what it takes to survive and grow. The old playbook—grinding through spreadsheets, juggling invoices, and treating back-office work as a necessary burden—is being replaced by something more strategic.",
@@ -134,7 +136,7 @@ export const blogPosts: BlogPost[] = [
     slug: "Building-and-Keeping-a-Strong-Team-in-2025",
     title: "Building and Keeping a Strong Team in 2025",
     date: "November 2025",
-    author: "By Michael Balsamo | SAGE Advisory Group | November 2025",
+    author: "Michael Balsamo",
     image: "/images/blog-team.jpg",
     excerpt:
       "In 2025, independent restaurant owners are navigating a new staffing reality — one defined by higher wage expectations, a shrinking labor pool, and teams who value balance, purpose, and growth.",

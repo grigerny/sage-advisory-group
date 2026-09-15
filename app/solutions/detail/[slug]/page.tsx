@@ -17,6 +17,8 @@ export default async function SolutionDetail({
 
   if (!solution) notFound();
 
+  const services = "services" in solution ? solution.services : undefined;
+
   return (
     <>
       <PageHero eyebrow="SAGE Solution" title={solution.pageTitle} />
@@ -29,10 +31,23 @@ export default async function SolutionDetail({
             <p className="eyebrow">{solution.title}</p>
             <h2>{solution.pageTitle}</h2>
             <p className="lead">{solution.summary}</p>
-            <p>{solution.details}</p>
-            <ul className="check-list">
-              {solution.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}
-            </ul>
+            {solution.details ? <p>{solution.details}</p> : null}
+            {services?.length ? (
+              <ul className="service-list">
+                {services.map((service) => (
+                  <li key={service.title}>
+                    <strong>{service.title}</strong>
+                    <span> — {service.description}</span>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <ul className="check-list">
+                {solution.bullets.map((bullet) => (
+                  <li key={bullet}>{bullet}</li>
+                ))}
+              </ul>
+            )}
           </div>
         </div>
       </section>

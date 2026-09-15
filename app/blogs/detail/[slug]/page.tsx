@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
-import { blogPosts } from "@/content/blogs";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { PageHero } from "@/components/PageHero";
+import { blogPosts } from "@/content/blogs";
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
@@ -18,13 +19,29 @@ export default async function BlogDetail({
 
   return (
     <>
+      <div className="breadcrumb-bar">
+        <div className="container">
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Blogs", href: "/blogs/" },
+              { label: post.title }
+            ]}
+          />
+        </div>
+      </div>
       <PageHero
         eyebrow="Pre-Shift Notes and Industry Trends"
         title={post.title}
-        body={post.author}
+        body={`By ${post.author} · ${post.date}`}
       />
       <article className="section article">
         <div className="container article-body">
+          <p className="article-meta">
+            <span>{post.date}</span>
+            <span aria-hidden="true">·</span>
+            <span>{post.author}</span>
+          </p>
           <div className="article-image">
             <img src={post.image} alt={post.title} />
           </div>

@@ -101,14 +101,80 @@ export const solutions = [
   },
   {
     slug: "Restaurant-Project-Management",
-    title: "Restaurant Project Management",
+    title: "Project Management",
     pageTitle: "Restaurant Project Management",
     image: "/images/service-project-management.jpg",
     summary:
-      "Project oversight for restaurant openings, coordinating timelines, specialists, operating readiness, and the details that have to come together before launch.",
-    details:
-      "A single operating perspective for the moving pieces that turn a restaurant concept into an organized opening.",
-    bullets: ["Opening roadmap", "Vendor and specialist coordination", "Pre-opening operating systems"]
+      "We manage the full restaurant opening process alongside you — handling every detail and timeline so you can focus on leading your team, not chasing permits and contractors.",
+    details: "",
+    bullets: [],
+    services: [
+      {
+        title: "Evaluate Start-Up Costs & Requirements",
+        description:
+          "Analyze capital requirements, buildout costs, equipment budgets, and working capital needs so you launch with a clear financial picture — not surprises."
+      },
+      {
+        title: "Develop a Strategic Business Plan",
+        description:
+          "Build a data-backed business plan with realistic revenue projections, food and labor cost targets, and a clear path to profitability."
+      },
+      {
+        title: "Optimize Cost Structure",
+        description:
+          "Identify where your buildout and operating costs can be tightened before you open — aligning spending with the margins you need to hit."
+      },
+      {
+        title: "Select & Secure the Right Location",
+        description:
+          "Evaluate locations for operational fit — kitchen capacity, utility infrastructure, zoning, foot traffic, demographics, and lease terms that actually work for a restaurant."
+      },
+      {
+        title: "Navigate Permitting & Licensing",
+        description:
+          "Manage the full permitting and licensing process — DOH, SLA, DOB, fire, and all local and state approvals — so nothing holds up your opening."
+      },
+      {
+        title: "Collaborate with Architects & Designers",
+        description:
+          "Work alongside your architect and designer to ensure the kitchen layout, equipment plan, and floor design support both your concept and your operational workflow."
+      },
+      {
+        title: "Maximize Seating & Flow",
+        description:
+          "Plan your seating layout and service flow to maximize covers and revenue without compromising guest experience."
+      },
+      {
+        title: "Permits & Compliance",
+        description:
+          "Build the documentation, systems, and staff training needed to be fully compliant from day one — health code, food safety, labor, and fire safety."
+      },
+      {
+        title: "Build the Right Team",
+        description:
+          "Recruit and hire key leadership — kitchen lead, FOH management, bar — and build the onboarding and training systems they need to execute from opening day."
+      },
+      {
+        title: "Select Food & Beverage Partners",
+        description:
+          "Establish reliable vendor relationships for quality, pricing, and consistency."
+      },
+      {
+        title: "Implement Smart Technology Systems",
+        description:
+          "Choose and integrate POS, scheduling, and financial tools that streamline daily operations."
+      },
+      {
+        title: "Design Payroll & HR Infrastructure",
+        description:
+          "Construct scalable payroll procedures and compliance frameworks."
+      },
+      {
+        title: "Launch a Marketing & Brand Strategy",
+        description:
+          "Create awareness and ROI through targeted marketing and digital positioning."
+      }
+    ]
   },
   {
     slug: "11-Coaching-for-Restaurant-Owners-Operators",

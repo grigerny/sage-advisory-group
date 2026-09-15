@@ -103,10 +103,13 @@ export default function HomePage() {
           <div className="blog-grid">
             {blogPosts.map((post) => (
               <article className="blog-card" key={post.slug}>
-                <div className="blog-image">
+                <Link className="blog-image" href={`/blogs/detail/${post.slug}/`}>
                   <img src={post.image} alt={post.title} />
-                </div>
-                <p className="eyebrow">{post.date}</p>
+                </Link>
+                <p className="blog-meta">
+                  <span className="eyebrow">{post.date}</span>
+                  <span className="blog-author">{post.author}</span>
+                </p>
                 <h3>{post.title}</h3>
                 <p>{post.excerpt}</p>
                 <Link className="text-link" href={`/blogs/detail/${post.slug}/`}>
