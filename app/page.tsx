@@ -13,20 +13,14 @@ export default function HomePage() {
         style={{ backgroundImage: `url(${images.heroHome})` }}
       >
         <div className="hero-overlay" />
-        <img
-          className="hero-brand-mark"
-          src={images.heroLogo}
-          alt=""
-          aria-hidden="true"
-          width={163}
-          height={63}
-        />
         <div className="container hero-content">
           <p className="eyebrow light">{home.hero.eyebrow}</p>
           <h1>{home.hero.title}</h1>
           <p>{home.hero.body}</p>
           <div className="hero-actions">
-            <a className="button" href={site.contactUrl}>{home.hero.primaryCta}</a>
+            <a className="button" href={site.contactUrl} target="_blank" rel="noreferrer">
+              {home.hero.primaryCta}
+            </a>
             <Link className="button button-outline" href="/solutions/">
               {home.hero.secondaryCta}
             </Link>
@@ -67,8 +61,10 @@ export default function HomePage() {
           <h2>{home.investment.title}</h2>
           <p>{home.investment.body}</p>
           <div className="hero-actions">
-            <a className="button button-light" href={site.contactUrl}>Contact Us</a>
-            <a className="button button-outline-light" href={site.contactUrl}>
+            <a className="button button-light" href={site.contactUrl} target="_blank" rel="noreferrer">
+              Contact Us
+            </a>
+            <a className="button button-outline-light" href={site.contactUrl} target="_blank" rel="noreferrer">
               Schedule a Free Advisory Call
             </a>
           </div>

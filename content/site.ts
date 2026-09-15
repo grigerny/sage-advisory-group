@@ -1,10 +1,13 @@
+export const contactUrl =
+  "https://thesageadvisorygroup.hbportal.co/public/68d2b7d43948bd0037790b2e";
+
 export const site = {
   name: "The SAGE Advisory Group",
   shortName: "SAGE",
   description:
     "Restaurant and hospitality advisory for independent operators seeking stronger financial visibility, systems, and day-to-day execution.",
   email: "info@thesageadvisorygroup.com",
-  contactUrl: "https://thesageadvisorygroup.hbportal.co/",
+  contactUrl,
   socials: {
     facebook: "#",
     instagram: "#",
@@ -14,7 +17,8 @@ export const site = {
     { label: "Home", href: "/" },
     { label: "About", href: "/about-us/" },
     { label: "Solutions", href: "/solutions/" },
-    { label: "Blogs", href: "/blogs/" }
+    { label: "Blogs", href: "/blogs/" },
+    { label: "Contact", href: contactUrl, external: true as const }
   ]
 };
 
@@ -53,10 +57,10 @@ export const home = {
     ]
   },
   investment: {
-    eyebrow: "It’s Time to Invest",
-    title: "in the Business Behind Your Restaurant",
+    eyebrow: "It’s Time to",
+    title: "Invest in the Business Behind Your Restaurant",
     body:
-      "SAGE works beside ownership and leadership teams to bring more order, consistency, accountability, and visibility to daily operations."
+      "We’re not here to take over — we’re here to stand with you. Our team brings experience, systems, and follow-through to help your operation run smoother and smarter. Our work brings order, calm, and progress that sticks."
   },
   why: {
     eyebrow: "Why SAGE?",
